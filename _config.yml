@@ -4,12 +4,12 @@
 # ---------------------------------------------------------------
 
 # Site
-title: NexT
+title: Broken Shaw
 subtitle:
 description:
-author: John Doe
+author: Shuang Yuan
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: en
+language: zh-Hans
 date_format: '%Y-%m-%d'
 
 # URL
@@ -379,7 +379,7 @@ han: false
 
 # Disqus
 disqus:
-  enable: false
+  enable: true
   shortname:
   count: true
   # hide comments (visitors need to click to load the comments)
