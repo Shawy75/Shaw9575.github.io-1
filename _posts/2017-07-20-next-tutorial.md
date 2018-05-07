@@ -1,5 +1,5 @@
 ---
-title: Next Theme Tutorial
+title: Next 主题教程
 description: NexT is a high quality elegant Jekyll theme ported from Hexo Next. It is crafted from scratch, with love.
 categories:
  - 教程
