@@ -1,6 +1,7 @@
 ---
 title: 第一次初识，first commit
 date: 2018-05-07 0:40:09
+description: 纪念一下，今天是个好日子
 comments: true
 categories:
 - 随笔
