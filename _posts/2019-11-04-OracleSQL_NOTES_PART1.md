@@ -12,13 +12,13 @@ tags:
 
 ## SQL (Structured Query Language)
 
-* DQL / DRL (Data Query Language) : 
+* DQL / DRL (Data Query Language) :   
   SELECT, FROM, WHERE, ORDER, GROUP, HAVING
-* DDL (Data Definition Language) :
+* DDL (Data Definition Language) :  
   CREATE, ALTER, DROP, TRUNCATE, RENAME
-* DML (Data Manipulation Language) :
+* DML (Data Manipulation Language) :  
   INSERT, UPDATE, DELETE
-* DCL (Data Control Language) :
+* DCL (Data Control Language) :  
   GRANT, REVOKE
-* TCL (Transaction Control Language):
+* TCL (Transaction Control Language):  
   COMMIT, ROLLBACK, SAVEPOINT
