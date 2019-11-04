@@ -8,4 +8,17 @@ tags:
 
 > 主要Focusing on四个重要的讨论点，When， How， Why， What
 
-## SQL Language
+<!-- more -->
+
+## SQL (Structured Query Language)
+
+* DQL / DRL (Data Query Language) : 
+  SELECT, FROM, WHERE, ORDER, GROUP, HAVING
+* DDL (Data Definition Language) :
+  CREATE, ALTER, DROP, TRUNCATE, RENAME
+* DML (Data Manipulation Language) :
+  INSERT, UPDATE, DELETE
+* DCL (Data Control Language) :
+  GRANT, REVOKE
+* TCL (Transaction Control Language):
+  COMMIT, ROLLBACK, SAVEPOINT
