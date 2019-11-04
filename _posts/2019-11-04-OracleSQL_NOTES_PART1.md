@@ -10,9 +10,9 @@ tags:
 
 <!-- more -->
 
-## SQL (Structured Query Language) Basic
-# Non-relational Databases vs. Relational Databases
-# SQL
+# SQL (Structured Query Language) Basic
+## Non-relational Databases vs. Relational Databases
+## SQL
 * DQL / DRL (Data Query Language) :   
   SELECT, FROM, WHERE, ORDER, GROUP, HAVING
 * DDL (Data Definition Language) :  
@@ -24,5 +24,5 @@ tags:
 * TCL (Transaction Control Language):  
   COMMIT, ROLLBACK, SAVEPOINT
 
-## SQL Common Key Words
-# Constraint
+# SQL Common Key Words
+## Constraint
