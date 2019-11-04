@@ -10,7 +10,14 @@ tags:
 
 <!-- more -->
 
-# SQL (Structured Query Language) Basic
+# SQL Basic
+## WHAT IS SQL?
+  SQL stands for Structured Query Language.  
+  SQL lets you access and manipulate databases.  
+## RDBMS
+  RDBMS stands for Relational Database Management System.  
+  RDBMS is the basis for SQL, and for all modern database systems such as MS SQL Server, IBM DB2, Oracle, MySQL, and Microsoft Access.  
+  The data in RDBMS is stored in database objects called tables. A table is a collection of related data entries and it consists of columns and rows.  
 ## Non-relational Databases vs. Relational Databases
 ## SQL
 * DQL / DRL (Data Query Language) :   
@@ -43,7 +50,7 @@ tags:
   A PRIMARY KEY constraint automatically has a UNIQUE constraint.  
   However, you can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per table.  
   
-* PRIMARY KEY
+* PRIMARY KEY  
   PRIMARY KEY 约束唯一标识数据库表中的每条记录。主键建立时自带聚集索引。  
   主键必须包含唯一的值。主键列不能包含 NULL 值。  
   每个表都应该有一个主键，并且每个表只能有一个主键。  
@@ -51,7 +58,7 @@ tags:
   Primary keys must contain UNIQUE values, and cannot contain NULL values.  
   A table can have only ONE primary key; and in the table, this primary key can consist of single or multiple columns (fields).  
   
-* FOREIGH KEY
+* FOREIGH KEY  
   一个表中的 FOREIGN KEY 指向另一个表中的 PRIMARY KEY。  
   包含外键的表称为子表，包含候选键（Candidate Key）的表称为引用表或父表。  
   FOREIGN KEY 约束用于预防破坏表之间连接的动作。  
@@ -61,10 +68,19 @@ tags:
   The FOREIGN KEY constraint is used to prevent actions that would destroy links between tables.  
   The FOREIGN KEY constraint also prevents invalid data from being inserted into the foreign key column, because it has to be one of the values contained in the table it points to.  
 
-* CHECK
+* CHECK  
   CHECK 约束用于限制列中的值的范围。  
   如果对单个列定义 CHECK 约束，那么该列只允许特定的值。  
   如果对一个表定义 CHECK 约束，那么此约束会在特定的列中对值进行限制。  
   The CHECK constraint is used to limit the value range that can be placed in a column.  
   If you define a CHECK constraint on a single column it allows only certain values for this column.  
   If you define a CHECK constraint on a table it can limit the values in certain columns based on values in other columns in the row.  
+
+* DEFAULT  
+  DEFAULT 约束用于向列中插入默认值。  
+  如果没有规定其他的值，那么会将默认值添加到所有的新记录。  
+  The DEFAULT constraint is used to provide a default value for a column.  
+  The default value will be added to all new records IF no other value is specified.  
+
+## VARCHAR, VACHAR2, CHAR
+* VARCHAR  
