@@ -289,8 +289,14 @@ tags:
 * What is a Cursor?  
   
   在PL/SQL块中执行`SELECT`、`INSERT`、`DELETE`和`UPDATE`语句时，ORACLE会在内存中为其分配上下文区（Context Area），即缓冲区。游标是指向该区的一个指针，或是命名一个工作区（Work Area），或是一种结构化数据类型。它为应用等量齐观提供了一种对具有多行数据查询结果集中的每一行数据分别进行单独处理的方法，是设计嵌入式SQL语句的应用程序的常用编程方式。  
-  在每个用户会话中，可以同时打开多个游标，其数量由数据库初始化参数文件中的`OPEN_CURSORS`参数定义。
+  **A cursor is a pointer that points to a result of a query.** PL/SQL has two types of cursors: **implicit cursors** and **explicit cursors**.  
   ![cursor](/assets/images/CURSOR.jpeg)
+  - Implicit cursors  
   
+    Whenever Oracle executes an SQL statement such as `SELECT INTO`, `INSERT`, `UPDATE`, and `DELETE`, it automatically creates an implicit cursor.  
+    
+  - Explicit cursors  
+  
+    An explicit cursor is an `SELECT` statement declared explicitly in the declaration section of the current block or a package specification. For an explicit cursor, you have the control over its execution cycle from `OPEN`, `FETCH`, and `CLOSE`.
   
  
