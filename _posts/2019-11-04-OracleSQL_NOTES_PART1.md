@@ -105,4 +105,5 @@ tags:
   Many (but not all) aggregate functions that take a single argument accept these clauses:  
   1. The syntax diagrams for aggregate functions in this chapter use the keyword `DISTINCT` for simplicity.  
   2. ALL causes an aggregate function to consider all values, including all duplicates.  
+  
   For example, the `DISTINCT` average of 1, 1, 1, and 3 is 2. The `ALL` average is 1.5. If you specify neither, then the default is `ALL`.
