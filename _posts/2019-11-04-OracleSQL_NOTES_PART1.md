@@ -115,18 +115,18 @@ tags:
 
   1. UNION  
     The UNION command combines the result set of two or more `SELECT` statements (only distinct values).  
-    ![Union](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/04_sql_union.gif)
+    ![Union.gif](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/04_sql_union.gif)
   2. UNIONALL  
     The UNION ALL command combines the result set of two or more `SELECT` statements (allows duplicate values).  
-    ![Unionall](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/05_sql_union_all.gif)
+    ![Unionall.gif](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/05_sql_union_all.gif)
 * MINUS / INTERSECT  
 
   1. MINUS  
     MINUS returns the difference between the first and second `SELECT` statement. It is the one where we need to be careful which statement will be put first, cause we will get only those results that are in the first `SELECT` statement and not in the second.  
-    ![Minus](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/06_sql_minus_12.gif)
+    ![Minus.gif](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/06_sql_minus_12.gif)
   2. INTERSECT  
     INTERSECT is opposite from MINUS as it returns us the results that are both to be found in first and second `SELECT` statement.  
-    ![Intersect](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/08_sql_intersect.gif)
+    ![Intersect.gif](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/08_sql_intersect.gif)
     
 ## VIEW & TEMPORARY TABLE
 * VIEW  
@@ -137,7 +137,7 @@ tags:
 
 * Temporary Table  
   In Oracle Database, global temporary tables are permanent objects whose data are stored on disk and automatically deleted at the end of a session or transaction. In addition, global temporary tables are visible to all sessions currently connected to the database.  
-  ![Global/Private](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/WechatIMG64.jpeg)
+  ![Global/Private.jpeg](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/WechatIMG64.jpeg)
 
 * VIEW vs. TEMPORARY TABLE  
   Modifications on view could change the original table data. However, the modification on temp will keep the original table intacted. And the modification on oringal table after create the view will have effects on the view. On the other hands, temp table would not be affected.  
