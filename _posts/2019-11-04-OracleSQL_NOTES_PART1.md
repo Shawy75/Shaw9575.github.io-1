@@ -115,18 +115,18 @@ tags:
 
   1. UNION  
     The UNION command combines the result set of two or more `SELECT` statements (only distinct values).  
-    ![Union.gif](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/04_sql_union.gif)
+    ![Union.gif](/assets/images/04_sql_union.gif)
   2. UNIONALL  
     The UNION ALL command combines the result set of two or more `SELECT` statements (allows duplicate values).  
-    ![Unionall.gif](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/05_sql_union_all.gif)
+    ![Unionall.gif](/assets/images/05_sql_union_all.gif)
 * MINUS / INTERSECT  
 
   1. MINUS  
     MINUS returns the difference between the first and second `SELECT` statement. It is the one where we need to be careful which statement will be put first, cause we will get only those results that are in the first `SELECT` statement and not in the second.  
-    ![Minus.gif](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/06_sql_minus_12.gif)
+    ![Minus.gif](/assets/images/06_sql_minus_12.gif)
   2. INTERSECT  
     INTERSECT is opposite from MINUS as it returns us the results that are both to be found in first and second `SELECT` statement.  
-    ![Intersect.gif](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/08_sql_intersect.gif)
+    ![Intersect.gif](/assets/images/08_sql_intersect.gif)
     
 ## VIEW & TEMPORARY TABLE
 * VIEW  
@@ -171,13 +171,7 @@ tags:
 * `SET TRANSACTION`：命名事务, 用来设置事务隔离级别。  
 
 ## Isolation Level
-| Isolation Level | Dirty Read | Non-Repeatable Read | Phantom Read |
-| --------------- | ---------- | ------------------- | ------------ |
-| Read Uncommitted | Possible | Possible | Possible |
-| Read Committed | Impossible | Possible | Possible |
-| Repeatable Read | Impossible | Impossible | Possible |
-| Serializable | Impossible | Impossible | Possible |
-
+![Iso_level]()
 * 未提交读(Read Uncommitted)：允许脏读，也就是可能读取到其他会话中未提交事务修改的数据  
 * 提交读(Read Committed)：只能读取到已经提交的数据。Oracle等多数数据库默认都是该级别 (不重复读)  
 * 可重复读(Repeated Read)：可重复读。在同一个事务内的查询都是事务开始时刻一致的，InnoDB默认级别。在SQL标准中，该隔离级别消除了不可重复读，但是还存在幻象读  
