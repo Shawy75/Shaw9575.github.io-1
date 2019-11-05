@@ -92,8 +92,8 @@ tags:
   The CHAR datatype stores fixed-length character strings. When you create a table with a CHAR column, you must specify a string length (in bytes or characters) between 1 and 2000 bytes for the CHAR column width. The default is 1 byte. Oracle then guarantees that:  
     1. When you insert or update a row in the table, the value for the CHAR column has the fixed length.  
     2. If you give a shorter value, then the value is blank-padded to the fixed length.  
-    3. If a value is too large, Oracle Database returns an error.  
-
+    3. If a value is too large, Oracle Database returns an error.   
+    
 * VARCHAR, VARCHAR2
 
   The VARCHAR2 datatype stores variable-length character strings. When you create a table with a VARCHAR2 column, you specify a maximum string length (in bytes or characters) between 1 and 4000 bytes for the VARCHAR2 column. For each row, Oracle Database stores each value in the column as a variable-length field unless a value exceeds the column's maximum length, in which case Oracle Database returns an error.  
