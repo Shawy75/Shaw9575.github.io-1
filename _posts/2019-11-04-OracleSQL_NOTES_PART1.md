@@ -237,3 +237,10 @@ tags:
 * Stored Procedure vs. Function  
 ![SPF](/assets/images/SP:F.jpg)
 ![func](/assets/images/function.jpeg)
+
+* Stored Procedure  
+存储过程（Stored Procedure ）
+: 是一组为了完成特定功能的SQL语句集，经编译后存储在数据库中。用户通过指定存储过程的名字并给出参数（如果该存储过程带有参数）来执行它。  
+存储过程是数据库中的一个重要对象，任何一个设计良好的数据库应用程序都应该用到存储过程。  
+存储过程是由流控制和SQL 语句书写的过程，这个过程经编译和优化后存储在数据库服务器中，应用程序使用时只要调用即可。  
+在Oracle 中，若干个有联系的过程可以组合在一起构成程序包。  
