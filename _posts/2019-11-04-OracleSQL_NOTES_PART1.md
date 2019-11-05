@@ -1,5 +1,5 @@
 ---
-title: ORACLE SQL 学习笔记 PART 1
+title: ORACLE SQL NOTE
 description: 一些基础的ORACLE SQL的概念
 categories:
  - 教程
@@ -290,6 +290,7 @@ tags:
   
   在PL/SQL块中执行`SELECT`、`INSERT`、`DELETE`和`UPDATE`语句时，ORACLE会在内存中为其分配上下文区（Context Area），即缓冲区。游标是指向该区的一个指针，或是命名一个工作区（Work Area），或是一种结构化数据类型。它为应用等量齐观提供了一种对具有多行数据查询结果集中的每一行数据分别进行单独处理的方法，是设计嵌入式SQL语句的应用程序的常用编程方式。  
   在每个用户会话中，可以同时打开多个游标，其数量由数据库初始化参数文件中的`OPEN_CURSORS`参数定义。
-  ![cursor]()
+  ![cursor](/assets/images/CURSOR.jpeg)
+  
   
  
