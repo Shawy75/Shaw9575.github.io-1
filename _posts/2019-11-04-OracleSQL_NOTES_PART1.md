@@ -297,6 +297,17 @@ tags:
     
   - Explicit cursors  
   
-    An explicit cursor is an `SELECT` statement declared explicitly in the declaration section of the current block or a package specification. For an explicit cursor, you have the control over its execution cycle from `OPEN`, `FETCH`, and `CLOSE`.
+    An explicit cursor is an `SELECT` statement declared explicitly in the declaration section of the current block or a package specification. For an explicit cursor, you have the control over its execution cycle from `OPEN`, `FETCH`, and `CLOSE`.  
+
+# Index
+## What is index?  
+  Indexes are **special lookup tables** that the database search engine can use to **speed up data retrieval**.  
   
+  An index helps to speed up `SELECT` queries and `WHERE` clauses, but it slows down data input, with the `UPDATE` and the `INSERT` statements. Indexes can be created or dropped with no effect on the data.  
+  
+  The basic syntax of a `CREATE INDEX` is as follows.
+  `CREATE INDEX index_name ON table_name;`
+
+## Cluster Index
+
  
