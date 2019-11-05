@@ -235,13 +235,13 @@ tags:
 # PL/SQL
 ## Stored Procedure / Function / Trigger
 * Stored Procedure vs. Function  
-| Stored Procedure | Function |
-| ---------------- | -------- |
-| Stored Procedure will not return a value, but it can return '0' or n values. | Functions always return a value. |
-| Procedures can have output or input parameters. | Functions have only input parameters for it. |
-| You can't call Procedures from a function. | You can call Functions from Procedures. |
-| You can use Transactions in Procedure. | You can't use Transactions in Function. |
-| By using a try-catch block, an exception can be handled in a Procedure. | You can't use try- catch block in a Function to handle the exception. |
-| You can't utilize Procedures in a SELECT statement. | Function can be utilizad in a SELECT statement. |
-| The procedure allows as DML as well as a SELECT statement in it. | Function allows only SELECT statement in it. |
+| Stored Procedure                                                                                       | Function                                                                             |
+|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| Stored Procedure will not return a value, but it can return ‘0’ or n values.                           | Functions always return a value.                                                     |
+| Procedures can have output or input parameters.                                                        | Functions have only input parameters for it.                                         |
+| You can’t call Procedures from a function.                                                             | You can call Functions from Procedures.                                              |
+| You can use Transactions in Procedure.                                                                 | You can’t use Transactions in Function.                                              |
+| By using a try-catch block, an exception can be handled in a Procedure.                                | You can’t use try- catch block in a Function to handle the exception.                |
+| You can’t utilize Procedures in a SELECT statement.                                                    | Function can be utilizad in a SELECT statement.                                      |
+| The procedure allows as DML as well as a SELECT statement in it.                                       | Function allows only SELECT statement in it.                                         |
 | Stored Procedures cannot be used in the SQL statement anywhere in the WHERE/ HAVING /SELECT statement. | Functions can be used in the SQL statement anywhere in SELECT/ WHERE/ HAVING syntax. |
