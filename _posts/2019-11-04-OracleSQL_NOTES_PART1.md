@@ -236,3 +236,4 @@ tags:
 ## Stored Procedure / Function / Trigger
 * Stored Procedure vs. Function  
 ![SP/F](/assets/images/SP:F.jpeg)
+![SP/F2](/assets/images/SP:F2.jpeg)
