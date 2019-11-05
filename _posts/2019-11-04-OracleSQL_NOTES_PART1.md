@@ -233,7 +233,7 @@ tags:
   第一个事务对一个表中的数据进行了修改，这种修改涉及到表中的全部数据行。同时，第二个事务也修改这个表中的数据，这种修改是向表中插入一行新数据。那么，以后就会发生操作第一个事务的用户发现表中还有没有修改的数据行，就好象发生了幻觉一样。  
 
 # PL/SQL
-## Stored Procedure / Function / Trigger
+## Stored Procedure / Function
 * Stored Procedure vs. Function  
 ![SPF](/assets/images/SP:F.jpg)
 ![func](/assets/images/function.jpeg)
@@ -271,4 +271,15 @@ tags:
 
   只能返回一个变量的限制。而存储过程可以返回多个。而函数是可以嵌入在sql中使用的,可以在select中调用，而存储过程不行。执行的本质都一样。  
   函数限制比较多，比如不能用临时表，只能用表变量还有一些函数都不可用等等。而存储过程的限制相对就比较少。  
+
+## Trigger
+* What is a Trigger?  
+  触发器是一种特殊的存储过程，**触发器一般由事件触发并且不能接受参数**，存储器由语句块去调用  
+  A trigger is a named PL/SQL block stored in the Oracle Database and executed automatically when a triggering event takes place. The event can be any of the following:  
   
+    1. A data manipulation language  (DML) statement executed against a table e.g., `INSERT`, `UPDATE`, or `DELETE`. For example, if you define a trigger that fires before an `INSERT` statement on the `customers` table, the trigger will fire once before a new row is inserted into the `customers` table.  
+    2. A data definition language (DDL) statement executes e.g., `CREATE` or `ALTER` statement. These triggers are often used for auditing purposes to record changes of the schema.  
+    3. A system event such as startup or shutdown of the Oracle Database.  
+    4. A user event such as login or logout.
+  
+  The act of executing a trigger is also known as firing a trigger. We say that the trigger is fired.
