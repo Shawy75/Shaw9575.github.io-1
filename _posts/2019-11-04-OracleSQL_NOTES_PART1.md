@@ -135,6 +135,9 @@ tags:
     1. Improves the performance of data retriving.  
     2. Limit the degrees of exposure of the underlying tables to the outer world.  
 
-* Temporary Table
+* Temporary Table  
   In Oracle Database, global temporary tables are permanent objects whose data are stored on disk and automatically deleted at the end of a session or transaction. In addition, global temporary tables are visible to all sessions currently connected to the database.  
   ![Global/Private](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/WechatIMG64.jpeg)
+
+* VIEW vs. TEMPORARY TABLE  
+  Modifications on view could change the original table data. However, the modification on temp will keep the original table intacted. And the modification on oringal table after create the view will have effects on the view. On the other hands, temp table would not be affected.  
