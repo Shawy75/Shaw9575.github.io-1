@@ -171,7 +171,7 @@ tags:
 * `SET TRANSACTION`：命名事务, 用来设置事务隔离级别。  
 
 ## Isolation Level
-![Iso_level]()
+![Iso_level](/assets/images/WechatIMG3.jpeg)
 * 未提交读(Read Uncommitted)：允许脏读，也就是可能读取到其他会话中未提交事务修改的数据  
 * 提交读(Read Committed)：只能读取到已经提交的数据。Oracle等多数数据库默认都是该级别 (不重复读)  
 * 可重复读(Repeated Read)：可重复读。在同一个事务内的查询都是事务开始时刻一致的，InnoDB默认级别。在SQL标准中，该隔离级别消除了不可重复读，但是还存在幻象读  
