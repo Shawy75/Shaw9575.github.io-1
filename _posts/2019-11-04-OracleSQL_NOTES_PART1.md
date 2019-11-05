@@ -120,7 +120,7 @@ tags:
   - No DML triggers will be fired.
   - The operation cannot be rolled back.
   - DROP and TRUNCATE are DDL commands, whereas DELETE is a DML command.
-  - DELETE operations can be rolled back (undone), while DROP and TRUNCATE operations cannot be rolled back.
+  - DELETE operations can be rolled back (undone), while DROP and TRUNCATE operations cannot be rolled back.  
   
 * TRUNCATE  
 
@@ -135,7 +135,7 @@ tags:
   - Identify column is reset to its seed value if table contains any identity column.
   - Truncate uses less transaction space than the Delete statement.
   - Truncate cannot be used with indexed views.
-  - TRUNCATE is faster than DELETE.
+  - TRUNCATE is faster than DELETE.  
 
 * DELETE  
 
