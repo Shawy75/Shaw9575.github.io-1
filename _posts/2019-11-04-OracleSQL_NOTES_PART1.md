@@ -235,4 +235,4 @@ tags:
 # PL/SQL
 ## Stored Procedure / Function / Trigger
 * Stored Procedure vs. Function  
-![SP/F]()
+![SP/F](/assets/images/SP:F.jpeg)
