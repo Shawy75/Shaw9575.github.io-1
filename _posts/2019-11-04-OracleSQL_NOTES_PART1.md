@@ -93,12 +93,13 @@ tags:
     1. When you insert or update a row in the table, the value for the CHAR column has the fixed length.  
     2. If you give a shorter value, then the value is blank-padded to the fixed length.  
     3. If a value is too large, Oracle Database returns an error.   
-    
+
 * VARCHAR, VARCHAR2
 
   The VARCHAR2 datatype stores variable-length character strings. When you create a table with a VARCHAR2 column, you specify a maximum string length (in bytes or characters) between 1 and 4000 bytes for the VARCHAR2 column. For each row, Oracle Database stores each value in the column as a variable-length field unless a value exceeds the column's maximum length, in which case Oracle Database returns an error.  
   1. Varchar can identify NULL and empty string separately.	Varchar2 cannot identify both separately. Both considered as same for this.   
   2. Varchar is ANSI Sql standard. Varchar2 is Oracle standard.   
+
 ## AGGREGATION FUNCTIONS (MIN / MAX / AVG / SUM / COUNT)  
   Aggregate functions return a single result row based on groups of rows, rather than on single rows. Aggregate functions can appear in select lists and in `ORDER BY` and `HAVING` clauses. They are commonly used with the `GROUP BY` clause in a `SELECT` statement, where Oracle Database divides the rows of a queried table or view into groups. In a query containing a `GROUP BY` clause, the elements of the select list can be aggregate functions, `GROUP BY` expressions, constants, or expressions involving one of these. Oracle applies the aggregate functions to each group of rows and returns a single result row for each group.  
   
@@ -107,3 +108,21 @@ tags:
   2. ALL causes an aggregate function to consider all values, including all duplicates.  
   
   For example, the `DISTINCT` average of 1, 1, 1, and 3 is 2. The `ALL` average is 1.5. If you specify neither, then the default is `ALL`.
+
+## UNION / UNIONALL / MINUS / INTERSECT  
+* UNION / UNIONALL  
+
+  1. UNION  
+    The UNION command combines the result set of two or more `SELECT` statements (only distinct values).  
+    
+  2. UNIONALL  
+    The UNION ALL command combines the result set of two or more `SELECT` statements (allows duplicate values).  
+    
+* MINUS / INTERSECT  
+
+  1. MINUS  
+    MINUS returns the difference between the first and second `SELECT` statement. It is the one where we need to be careful which statement will be put first, cause we will get only those results that are in the first `SELECT` statement and not in the second.  
+    
+  2. INTERSECT  
+    INTERSECT is opposite from MINUS as it returns us the results that are both to be found in first and second `SELECT` statement.  
+    
