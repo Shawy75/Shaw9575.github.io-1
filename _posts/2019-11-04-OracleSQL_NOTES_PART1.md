@@ -112,6 +112,7 @@ tags:
 
 ## DROP / TRUNCATE / DELETE
 * DROP  
+
   DROP is used to delete a whole database or just a table.The DROP statement destroys the objects like an existing database, table, index, or view.  
 
   - The DROP command removes a table from the database.
@@ -122,6 +123,7 @@ tags:
   - DELETE operations can be rolled back (undone), while DROP and TRUNCATE operations cannot be rolled back.
   
 * TRUNCATE  
+
   TRUNCATE SQL query removes all rows from a table, without logging the individual row deletions.   
   
   - TRUNCATE is executed using a table lock and whole table is locked for remove all records.
@@ -135,7 +137,8 @@ tags:
   - Truncate cannot be used with indexed views.
   - TRUNCATE is faster than DELETE.
 
-* DELETE
+* DELETE  
+
   To execute a DELETE queue, delete permissions are required on the target table. If you need to use a WHERE clause in a DELETE, select permissions are required as well.
 
    - DELETE is a DML command.
@@ -229,3 +232,5 @@ tags:
   Phantom reads are of a totally different nature than the anomalies introduced previously.  
   第一个事务对一个表中的数据进行了修改，这种修改涉及到表中的全部数据行。同时，第二个事务也修改这个表中的数据，这种修改是向表中插入一行新数据。那么，以后就会发生操作第一个事务的用户发现表中还有没有修改的数据行，就好象发生了幻觉一样。  
 
+# PL/SQL
+## Stored Procedure / Function / Trigger
