@@ -135,6 +135,20 @@ tags:
   - Truncate cannot be used with indexed views.
   - TRUNCATE is faster than DELETE.
 
+* DELETE
+  To execute a DELETE queue, delete permissions are required on the target table. If you need to use a WHERE clause in a DELETE, select permissions are required as well.
+
+   - DELETE is a DML command.
+   - DELETE is executed using a row lock, each row in the table is locked for deletion.
+   - We can use where clause with DELETE to filter & delete specific records.
+   - The DELETE command is used to remove rows from a table based on WHERE condition.
+   - It maintain the log, so it slower than TRUNCATE.
+   - The DELETE statement removes rows one at a time and records an entry in the transaction log for each deleted row.
+   - Identity of column keep DELETE retains the identity.
+   - To use Delete you need DELETE permission on the table.
+   - Delete uses the more transaction space than Truncate statement.
+   - Delete can be used with indexed views.
+
 ## UNION / UNIONALL / MINUS / INTERSECT  
 * UNION / UNIONALL  
 
