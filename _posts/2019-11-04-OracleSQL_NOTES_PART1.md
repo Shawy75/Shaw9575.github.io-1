@@ -99,3 +99,10 @@ tags:
   The VARCHAR2 datatype stores variable-length character strings. When you create a table with a VARCHAR2 column, you specify a maximum string length (in bytes or characters) between 1 and 4000 bytes for the VARCHAR2 column. For each row, Oracle Database stores each value in the column as a variable-length field unless a value exceeds the column's maximum length, in which case Oracle Database returns an error.  
   1. Varchar can identify NULL and empty string separately.	Varchar2 cannot identify both separately. Both considered as same for this.   
   2. Varchar is ANSI Sql standard. Varchar2 is Oracle standard.   
+## AGGREGATION FUNCTIONS (MIN / MAX / AVG / SUM / COUNT)  
+  Aggregate functions return a single result row based on groups of rows, rather than on single rows. Aggregate functions can appear in select lists and in `ORDER BY` and `HAVING` clauses. They are commonly used with the `GROUP BY` clause in a `SELECT` statement, where Oracle Database divides the rows of a queried table or view into groups. In a query containing a `GROUP BY` clause, the elements of the select list can be aggregate functions, `GROUP BY` expressions, constants, or expressions involving one of these. Oracle applies the aggregate functions to each group of rows and returns a single result row for each group.  
+  
+  Many (but not all) aggregate functions that take a single argument accept these clauses:  
+  1. The syntax diagrams for aggregate functions in this chapter use the keyword `DISTINCT` for simplicity.  
+  2. ALL causes an aggregate function to consider all values, including all duplicates.  
+  For example, the `DISTINCT` average of 1, 1, 1, and 3 is 2. The `ALL` average is 1.5. If you specify neither, then the default is `ALL`.
