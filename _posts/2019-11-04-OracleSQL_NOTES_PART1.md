@@ -117,12 +117,13 @@ tags:
     ![Union](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/04_sql_union.gif)
   2. UNIONALL  
     The UNION ALL command combines the result set of two or more `SELECT` statements (allows duplicate values).  
-    
+    ![Unionall](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/05_sql_union_all.gif)
 * MINUS / INTERSECT  
 
   1. MINUS  
     MINUS returns the difference between the first and second `SELECT` statement. It is the one where we need to be careful which statement will be put first, cause we will get only those results that are in the first `SELECT` statement and not in the second.  
-    
+    ![Minus]()
   2. INTERSECT  
     INTERSECT is opposite from MINUS as it returns us the results that are both to be found in first and second `SELECT` statement.  
+    ![Intersect]()
     
