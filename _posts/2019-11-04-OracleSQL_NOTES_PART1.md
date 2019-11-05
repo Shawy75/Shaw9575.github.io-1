@@ -86,6 +86,7 @@ tags:
   如果没有规定其他的值，那么会将默认值添加到所有的新记录。  
   The DEFAULT constraint is used to provide a default value for a column.  
   The default value will be added to all new records IF no other value is specified.  
+
 ## VARCHAR, VACHAR2, CHAR
 * CHAR  
 
