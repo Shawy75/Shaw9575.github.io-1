@@ -234,3 +234,5 @@ tags:
 
 # PL/SQL
 ## Stored Procedure / Function / Trigger
+* Stored Procedure vs. Function  
+![SP/F]()
