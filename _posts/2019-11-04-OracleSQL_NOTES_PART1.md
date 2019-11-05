@@ -136,3 +136,5 @@ tags:
     2. Limit the degrees of exposure of the underlying tables to the outer world.  
 
 * Temporary Table
+  In Oracle Database, global temporary tables are permanent objects whose data are stored on disk and automatically deleted at the end of a session or transaction. In addition, global temporary tables are visible to all sessions currently connected to the database.  
+  ![Global/Private]()
