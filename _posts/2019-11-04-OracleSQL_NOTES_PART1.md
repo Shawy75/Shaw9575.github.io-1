@@ -110,6 +110,31 @@ tags:
   
   For example, the `DISTINCT` average of 1, 1, 1, and 3 is 2. The `ALL` average is 1.5. If you specify neither, then the default is `ALL`.
 
+## DROP / TRUNCATE / DELETE
+* DROP  
+  DROP is used to delete a whole database or just a table.The DROP statement destroys the objects like an existing database, table, index, or view.  
+
+  - The DROP command removes a table from the database.
+  - All the tables' rows, indexes and privileges will also be removed.
+  - No DML triggers will be fired.
+  - The operation cannot be rolled back.
+  - DROP and TRUNCATE are DDL commands, whereas DELETE is a DML command.
+  - DELETE operations can be rolled back (undone), while DROP and TRUNCATE operations cannot be rolled back.
+  
+* TRUNCATE  
+  TRUNCATE SQL query removes all rows from a table, without logging the individual row deletions.   
+  
+  - TRUNCATE is executed using a table lock and whole table is locked for remove all records.
+  - We cannot use WHERE clause with TRUNCATE.
+  - TRUNCATE removes all rows from a table.
+  - Minimal logging in transaction log, so it is faster performance wise.
+  - TRUNCATE TABLE removes the data by deallocating the data pages used to store the table data and records only the page deallocations in the transaction log.
+  - TRUNCATE TABLE通过取消分配用于存储表数据的数据页来删除数据，并仅在事务日志中记录页面的解除分配。
+  - Identify column is reset to its seed value if table contains any identity column.
+  - Truncate uses less transaction space than the Delete statement.
+  - Truncate cannot be used with indexed views.
+  - TRUNCATE is faster than DELETE.
+
 ## UNION / UNIONALL / MINUS / INTERSECT  
 * UNION / UNIONALL  
 
@@ -187,5 +212,6 @@ tags:
   是指在一个事务内，多次读同一数据。在这个事务还没有结束时，另外一个事务也访问该同一数据。那么，在第一个事务中的两次读数据之间，由于第二个事务的修改，那么第一个事务两次读到的的数据可能是不一样的。这样就发生了在一个事务内两次读到的数据是不一样的，因此称为是不可重复读。  
 
 * Phantom Read  
-  Phantom reads are of a totally different nature than the anomalies introduced previously.
+  Phantom reads are of a totally different nature than the anomalies introduced previously.  
   第一个事务对一个表中的数据进行了修改，这种修改涉及到表中的全部数据行。同时，第二个事务也修改这个表中的数据，这种修改是向表中插入一行新数据。那么，以后就会发生操作第一个事务的用户发现表中还有没有修改的数据行，就好象发生了幻觉一样。  
+
