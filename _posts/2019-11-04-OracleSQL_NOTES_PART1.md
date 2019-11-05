@@ -41,6 +41,7 @@ tags:
   This enforces a field to always contain a value, which means that you cannot insert a new record, or update a record without adding a value to this field.  
   
 * UNIQUE  
+
   UNIQUE 约束唯一标识数据库表中的每条记录。  
   UNIQUE 和 PRIMARY KEY 约束均为列或列集合提供了唯一性的保证。  
   PRIMARY KEY 拥有自动定义的 UNIQUE 约束。  
@@ -51,6 +52,7 @@ tags:
   However, you can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per table.  
   
 * PRIMARY KEY  
+
   PRIMARY KEY 约束唯一标识数据库表中的每条记录。主键建立时自带聚集索引。  
   主键必须包含唯一的值。主键列不能包含 NULL 值。  
   每个表都应该有一个主键，并且每个表只能有一个主键。  
@@ -59,6 +61,7 @@ tags:
   A table can have only ONE primary key; and in the table, this primary key can consist of single or multiple columns (fields).  
   
 * FOREIGH KEY  
+
   一个表中的 FOREIGN KEY 指向另一个表中的 PRIMARY KEY。  
   包含外键的表称为子表，包含候选键（Candidate Key）的表称为引用表或父表。  
   FOREIGN KEY 约束用于预防破坏表之间连接的动作。  
@@ -69,6 +72,7 @@ tags:
   The FOREIGN KEY constraint also prevents invalid data from being inserted into the foreign key column, because it has to be one of the values contained in the table it points to.  
 
 * CHECK  
+
   CHECK 约束用于限制列中的值的范围。  
   如果对单个列定义 CHECK 约束，那么该列只允许特定的值。  
   如果对一个表定义 CHECK 约束，那么此约束会在特定的列中对值进行限制。  
@@ -77,10 +81,21 @@ tags:
   If you define a CHECK constraint on a table it can limit the values in certain columns based on values in other columns in the row.  
 
 * DEFAULT  
+
   DEFAULT 约束用于向列中插入默认值。  
   如果没有规定其他的值，那么会将默认值添加到所有的新记录。  
   The DEFAULT constraint is used to provide a default value for a column.  
   The default value will be added to all new records IF no other value is specified.  
-
 ## VARCHAR, VACHAR2, CHAR
-* VARCHAR  
+* CHAR  
+
+  The CHAR datatype stores fixed-length character strings. When you create a table with a CHAR column, you must specify a string length (in bytes or characters) between 1 and 2000 bytes for the CHAR column width. The default is 1 byte. Oracle then guarantees that:  
+    1. When you insert or update a row in the table, the value for the CHAR column has the fixed length.  
+    2. If you give a shorter value, then the value is blank-padded to the fixed length.  
+    3. If a value is too large, Oracle Database returns an error.  
+
+* VARCHAR, VARCHAR2
+
+  The VARCHAR2 datatype stores variable-length character strings. When you create a table with a VARCHAR2 column, you specify a maximum string length (in bytes or characters) between 1 and 4000 bytes for the VARCHAR2 column. For each row, Oracle Database stores each value in the column as a variable-length field unless a value exceeds the column's maximum length, in which case Oracle Database returns an error.  
+  1. Varchar can identify NULL and empty string separately.	Varchar2 cannot identify both separately. Both considered as same for this.   
+  2. Varchar is ANSI Sql standard. Varchar2 is Oracle standard.   
