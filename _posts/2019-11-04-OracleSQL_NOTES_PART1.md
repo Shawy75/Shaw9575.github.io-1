@@ -238,12 +238,12 @@ tags:
 ![SPF](/assets/images/SP:F.jpg)
 ![func](/assets/images/function.jpeg)
 
-**Summary**   
-
-  1.一般来说，存储过程实现的功能要复杂一点，而函数的实现的功能针对性比较强。  
-  2.对于存储过程来说可以返回参数，而函数只能返回值或者表对象。  
-  3.存储过程一般是作为一个独立的部分来执行（EXEC执行），而函数可以作为查询语句的一个部分来调用（SELECT调用），由于函数可以返回一个表对象，因此它可以在查询语句中位于FROM关键字的后面。  
-  4.当存储过程和函数被执行的时候，SQL Manager会到procedure cache中去取相应的查询语句，如果在procedure cache里没有相应的查询语句，SQL Manager就会对存储过程和函数进行编译。 Procedure cache中保存的是执行计划 (execution plan) ，当编译好之后就执行procedure cache中的execution plan，之后SQL SERVER会根据每个execution plan的实际情况来考虑是否要在cache中保存这个plan，评判的标准一个是这个execution plan可能被使用的频率；其次是生成这个plan的代价，也就是编译的耗时。保存在cache中的plan在下次执行时就不用再编译了。  
+  **Summary**   
+  
+    1.一般来说，存储过程实现的功能要复杂一点，而函数的实现的功能针对性比较强。  
+    2.对于存储过程来说可以返回参数，而函数只能返回值或者表对象。  
+    3.存储过程一般是作为一个独立的部分来执行（EXEC执行），而函数可以作为查询语句的一个部分来调用（SELECT调用），由于函数可以返回一个表对象，因此它可以在查询语句中位于FROM关键字的后面。  
+    4.当存储过程和函数被执行的时候，SQL Manager会到procedure cache中去取相应的查询语句，如果在procedure cache里没有相应的查询语句，SQL Manager就会对存储过程和函数进行编译。 Procedure cache中保存的是执行计划 (execution plan) ，当编译好之后就执行procedure cache中的execution plan，之后SQL SERVER会根据每个execution plan的实际情况来考虑是否要在cache中保存这个plan，评判的标准一个是这个execution plan可能被使用的频率；其次是生成这个plan的代价，也就是编译的耗时。保存在cache中的plan在下次执行时就不用再编译了。  
 
 * Stored Procedure  
 
