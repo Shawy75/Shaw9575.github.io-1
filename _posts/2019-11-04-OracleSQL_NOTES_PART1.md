@@ -114,7 +114,7 @@ tags:
 
   1. UNION  
     The UNION command combines the result set of two or more `SELECT` statements (only distinct values).  
-    
+    ![Union](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/04_sql_union.gif)
   2. UNIONALL  
     The UNION ALL command combines the result set of two or more `SELECT` statements (allows duplicate values).  
     
