@@ -122,7 +122,7 @@ tags:
 
   1. MINUS  
     MINUS returns the difference between the first and second `SELECT` statement. It is the one where we need to be careful which statement will be put first, cause we will get only those results that are in the first `SELECT` statement and not in the second.  
-    ![Minus]()
+    ![Minus](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/06_sql_minus_12.gif)
   2. INTERSECT  
     INTERSECT is opposite from MINUS as it returns us the results that are both to be found in first and second `SELECT` statement.  
     ![Intersect]()
