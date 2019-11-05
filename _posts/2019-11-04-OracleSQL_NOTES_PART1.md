@@ -128,3 +128,11 @@ tags:
     INTERSECT is opposite from MINUS as it returns us the results that are both to be found in first and second `SELECT` statement.  
     ![Intersect](https://github.com/Shaw9575/Shaw9575.github.io/blob/master/assets/images/08_sql_intersect.gif)
     
+## VIEW & TEMPORARY TABLE
+* VIEW  
+  Views in SQL are kind of virtual tables. A view also has rows and columns as they are in a real table in the database. We can create a view by selecting fields from one or more tables present in the database. A View can either have all the rows of a table or specific rows based on certain condition.  
+  What's the advantages?  
+    1. Improves the performance of data retriving.  
+    2. Limit the degrees of exposure of the underlying tables to the outer world.  
+
+* Temporary Table
