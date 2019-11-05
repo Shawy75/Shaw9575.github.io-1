@@ -305,7 +305,7 @@ tags:
   
   An index helps to speed up `SELECT` queries and `WHERE` clauses, but it slows down data input, with the `UPDATE` and the `INSERT` statements. Indexes can be created or dropped with no effect on the data.  
   
-  The basic syntax of a `CREATE INDEX` is as follows.
+  The basic syntax of a `CREATE INDEX` is as follows.  
   `CREATE INDEX index_name ON table_name;`
 
 ## Cluster Index
