@@ -141,3 +141,6 @@ tags:
 
 * VIEW vs. TEMPORARY TABLE  
   Modifications on view could change the original table data. However, the modification on temp will keep the original table intacted. And the modification on oringal table after create the view will have effects on the view. On the other hands, temp table would not be affected.  
+
+# Transaction
+## What's transaction?
