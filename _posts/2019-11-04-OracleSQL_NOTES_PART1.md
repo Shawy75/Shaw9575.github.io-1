@@ -168,4 +168,13 @@ tags:
 * `COMMIT`：提交更改；  
 * `ROLLBACK`：回滚更改；  
 * `SAVEPOINT`：在事务内部创建一系列可以 ROLLBACK 的还原点；  
-* `SET TRANSACTION`：命名事务；  
+* `SET TRANSACTION`：命名事务, 用来设置事务隔离级别。  
+
+## Isolation Level
+| Isolation Level | Dirty Read | Non-Repeatable Read | Phantom Read |
+| --------------- | ---------- | ------------------- | ------------ |
+| Read Uncommitted | Possible | Possible | Possible |
+| Read Committed | Impossible | Possible | Possible |
+| Repeatable Read | Impossible | Impossible | Possible |
+| Serializable | Impossible | Impossible | Possible |
+
