@@ -163,3 +163,9 @@ tags:
 * Durable  
   When the transaction is completed, effects of the modifications performed by the transaction must be permanent in the system.  
   事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。  
+
+## Transaction Statements
+* `COMMIT`：提交更改；  
+* `ROLLBACK`：回滚更改；  
+* `SAVEPOINT`：在事务内部创建一系列可以 ROLLBACK 的还原点；  
+* `SET TRANSACTION`：命名事务；  
