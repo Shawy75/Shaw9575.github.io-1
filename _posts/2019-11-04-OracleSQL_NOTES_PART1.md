@@ -302,12 +302,31 @@ tags:
 # Index
 ## What is index?  
   Indexes are **special lookup tables** that the database search engine can use to **speed up data retrieval**.  
-  
+    
   An index helps to speed up `SELECT` queries and `WHERE` clauses, but it slows down data input, with the `UPDATE` and the `INSERT` statements. Indexes can be created or dropped with no effect on the data.  
-  
+    
   The basic syntax of a `CREATE INDEX` is as follows.  
-  `CREATE INDEX index_name ON table_name;`
-
-## Cluster Index
-
+  `CREATE INDEX index_name ON table_name;`  
+  
+## Cluster Index  
+  
+  Cluster index is a type of index which sorts the data rows in the table on their key values. In the Database, there is only one clustered index per table.  
+  
+  A clustered index defines the order in which data is stored in the table which can be sorted in only one way. So, there can be an only a single clustered index for every table. In an RDBMS, usually, the primary key allows you to create a clustered index based on that specific column.  
+  
+  Characteristic of Clustered Index:
+    1. Default and sorted data storage  
+    2. Use just one or more than one columns for an index  
+    3. Helps you to store Data and index together  
+    4. Fragmentation  
+    5. Operations  
+    6. Clustered index scan and index seek  
+    7. Key Lookup  
+    
+  Advantages of Clustered Index:  
+    1. Clustered indexes are an ideal option for range or group by with max, min, count type queries.  
+    2. In this type of index, a search can go straight to a specific point in data so that you can keep reading sequentially from there.  
+    3. Clustered index method uses location mechanism to locate index entry at the start of a range.  
+    4. It is an effective method for range searches when a range of search key values is requested.  
+    5. Helps you to minimize page transfers and maximize the cache hits.  
  
