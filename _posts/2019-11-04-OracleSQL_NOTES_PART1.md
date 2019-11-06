@@ -314,7 +314,7 @@ tags:
   
   A clustered index defines the order in which data is stored in the table which can be sorted in only one way. So, there can be an only a single clustered index for every table. In an RDBMS, usually, the primary key allows you to create a clustered index based on that specific column.  
   
-  Characteristic of Clustered Index:
+* Characteristic of Clustered Index  
     1. Default and sorted data storage  
     2. Use just one or more than one columns for an index  
     3. Helps you to store Data and index together  
@@ -323,7 +323,7 @@ tags:
     6. Clustered index scan and index seek  
     7. Key Lookup  
     
-  Advantages of Clustered Index:  
+* Advantages of Clustered Index  
     1. Clustered indexes are an ideal option for range or group by with max, min, count type queries.  
     2. In this type of index, a search can go straight to a specific point in data so that you can keep reading sequentially from there.  
     3. Clustered index method uses location mechanism to locate index entry at the start of a range.  
