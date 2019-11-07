@@ -365,3 +365,6 @@ tags:
   1. A non-clustered index helps you to stores data in a logical order but does not allow to sort data rows physically.  
   2. Lookup process on non-clustered index becomes costly.  
   3. Every time the clustering key is updated, a corresponding update is required on the non-clustered index as it stores the clustering key.  
+  
+## Cluster vs. Non-Cluster Index
+!(clu-non-clu)[]
