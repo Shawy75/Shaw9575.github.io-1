@@ -329,4 +329,39 @@ tags:
     3. Clustered index method uses location mechanism to locate index entry at the start of a range.  
     4. It is an effective method for range searches when a range of search key values is requested.  
     5. Helps you to minimize page transfers and maximize the cache hits.  
+  
+* Disadvantages of Clustered Index  
+    1. Lots of inserts in non-sequential order.  
+    2. A clustered index creates lots of constant page splits, which includes data page as well as index pages.  
+    3. Extra work for SQL for inserts, updates, and deletes.  
+    4. A clustered index takes longer time to update records when the fields in the clustered index are changed.  
+    5. The leaf nodes mostly contain data pages in the clustered index.  
+  
+## Non-Cluster Index  
+  A Non-clustered index stores the data at one location and indices at another location. The index contains pointers to the location of that data. A single table can have many non-clustered indexes as an index in the non-clustered index is stored in different places.  
+  
+  For example, a book can have more than one index, one at the beginning which displays the contents of a book unit wise while the second index shows the index of terms in alphabetical order.  
+  
+  A non-clustering index is defined in the non-ordering field of the table. This type of indexing method helps you to improve the performance of queries that use keys which are not assigned as a primary key. A non-clustered index allows you to add a unique key for a table.  
  
+* Characteristics of Non-clustered Indexes  
+  
+  1. Store key values only  
+  2. Pointers to Heap/Clustered Index rows  
+  3. Allows Secondary data access  
+  4. Bridge to the data  
+  5. Operations of Index Scan and Index Seek  
+  6. You can create a nonclustered index for a table or view  
+  7. Every index row in the nonclustered index stores the nonclustered key value and a row locator  
+  
+* Advantages of Non-clustered index  
+
+  1. A non-clustering index helps you to retrieves data quickly from the database table.  
+  2. Helps you to avoid the overhead cost associated with the clustered index.  
+  3. A table may have multiple non-clustered indexes in RDBMS. So, it can be used to create more than one index.  
+  
+* Disadvantages of Non-clustered index  
+  
+  1. A non-clustered index helps you to stores data in a logical order but does not allow to sort data rows physically.  
+  2. Lookup process on non-clustered index becomes costly.  
+  3. Every time the clustering key is updated, a corresponding update is required on the non-clustered index as it stores the clustering key.  
