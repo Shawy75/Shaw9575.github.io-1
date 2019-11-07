@@ -367,4 +367,4 @@ tags:
   3. Every time the clustering key is updated, a corresponding update is required on the non-clustered index as it stores the clustering key.  
   
 ## Cluster vs. Non-Cluster Index
-!(clu-non-clu)[/assets/images/clu-nonclu.jpg]
+!(clunonclu)[/assets/images/clu-nonclu.jpg]
