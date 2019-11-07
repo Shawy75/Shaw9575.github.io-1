@@ -368,7 +368,7 @@ tags:
   
 ## Cluster vs. Non-Cluster Index
 ![clunonclu](/assets/images/clu-nonclu.jpg)
-![diff]()
+![diff](/assets/images/20160127144445485.png)
   聚集索引：可以帮助把很大的范围，迅速减小范围。但是查找该记录，就要从这个小范围中Scan了。   
   非聚集索引：把一个很大的范围，转换成一个小的地图。你需要在这个小地图中找你要寻找的信息的位置。然后通过这个位置，再去找你所需要的记录。  
   
