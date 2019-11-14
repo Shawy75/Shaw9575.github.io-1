@@ -2,8 +2,9 @@
 title: ORACLE SQL NOTE
 description: 一些基础的ORACLE SQL的概念
 categories:
- - 教程
+ - NOTES
 tags:
+ - Oracle SQL
 ---
 
 > 主要Focusing on四个重要的讨论点，When， How， Why， What
